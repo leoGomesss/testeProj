@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Fontes*/
+@font-face {
+    font-family: fonte-cabecalho;
+    src: url("fontes/Lobster-Regular.ttf");
+}
+@font-face {
+    font-family: fonte-paragrafo-cabecalho;
+    src: url("fontes/Ysabeau-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: fonte-menu;
+    src: url("fontes/EagleLake-Regular.ttf");
+}    
+/*Imagem de Fundo*/
+body {
+    background-image: url('imagens/imagemFundoMain.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*Cabeçalho*/
+header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1af09;
+}
+header h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: fonte-cabecalho, sans-serif;
+}
+header p {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: fonte-paragrafo-cabecalho;
+}
+/*Menu do Cabeçalho*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #255adf;
+}
+nav a{
+    font-size: 1.17em;
+    font-family: fonte-menu;
+    color: #ffcbdb;
+    text-decoration: none;
+    margin: 1px 0px;
+}
+nav a:hover {
+    color: #ffffff;
+    background-color: #c79d33;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media (max-width: 520px) {
+    header h2{
+        font-size: 1.3em;
+    }
+    header p{
+        font-size: 1em;
+    }
+    nav a {
+        font-size: 0.77em;
+    }
+}
+
