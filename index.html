@@ -9,16 +9,64 @@
     <link rel="stylesheet" href="estilos.css" />
   </head>
   <body>
+    <!--Cabeçalho-->
     <header>
       <div><h2>R3 Cursos</h2></div>
       <div><p>Educando e apredendo de uma forma diferente.</p></div>
+      <!--Menu do Cabeçalho-->
       <nav>
-        <a href="#">Menu</a>
-        <a href="#">Menu</a>
-        <a href="#">Menu</a>
-        <a href="#">Menu</a>
-        <a href="#">Menu</a>
+        <a href="#">Cursos</a>
+        <a href="#">Horários</a>
+        <a href="#">Alunos</a>
+        <a href="#">Contato</a>
       </nav>
     </header>
+    <!--Conteúdo Principal-->
+    <main>
+      <!--Carrossel(Slides)-->
+      <div class="slider">
+        <div class="slides">
+          <!--Inicio Radio button-->
+          <input type="radio" name="radioBtn" id="radio1" />
+          <input type="radio" name="radioBtn" id="radio2" />
+          <input type="radio" name="radioBtn" id="radio3" />
+          <input type="radio" name="radioBtn" id="radio4" />
+          <!--Fim Radio button-->
+
+          <!--Slides Imagens-->
+          <div class="slide" id="primeiro">
+            <img src="imagens/imagem001.jpg" />
+          </div>
+          <div class="slide">
+            <img src="imagens/imagem002.jpg" />
+          </div>
+          <div class="slide">
+            <img src="imagens/imagem003.jpg" />
+          </div>
+          <div class="slide">
+            <img src="imagens/imagem004.jpg" />
+          </div>
+          <!--Fim Slides Imagens-->
+
+          <!--Botões(bolinhas) Navegação Auto-->
+          <div class="navegacaoAuto">
+            <div class="autoBtn1"></div>
+            <div class="autoBtn2"></div>
+            <div class="autoBtn3"></div>
+            <div class="autoBtn4"></div>
+          </div>
+          <!--Fim Botões Navegação Auto-->
+
+          <!--Label de Navegação Manual-->
+          <div class="manualNavegacao">
+            <label for="radio1" class="manualBtn"></label>
+            <label for="radio2" class="manualBtn"></label>
+            <label for="radio3" class="manualBtn"></label>
+            <label for="radio4" class="manualBtn"></label>
+          </div>
+          <!--Fim Label Navegação Manual-->
+        </div>
+      </div>
+    </main>
   </body>
 </html>

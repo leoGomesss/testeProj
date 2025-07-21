@@ -1,78 +1,164 @@
 @charset "UTF-8";
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 /*Fontes*/
 @font-face {
-    font-family: fonte-cabecalho;
-    src: url("fontes/Lobster-Regular.ttf");
+  font-family: fonte-cabecalho;
+  src: url("fontes/Lobster-Regular.ttf");
 }
 @font-face {
-    font-family: fonte-paragrafo-cabecalho;
-    src: url("fontes/Ysabeau-Italic-VariableFont_wght.ttf");
+  font-family: fonte-paragrafo-cabecalho;
+  src: url("fontes/Ysabeau-Italic-VariableFont_wght.ttf");
 }
 @font-face {
-    font-family: fonte-menu;
-    src: url("fontes/EagleLake-Regular.ttf");
-}    
+  font-family: fonte-menu;
+  src: url("fontes/EagleLake-Regular.ttf");
+}
 /*Imagem de Fundo*/
 body {
-    background-image: url('imagens/imagemFundoMain.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url("imagens/imagemFundoMain.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 /*Cabeçalho*/
 header {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #f1af09;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1af09;
 }
 header h2 {
-    text-align: center;
-    font-size: 2.5em;
-    font-family: fonte-cabecalho, sans-serif;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: fonte-cabecalho, sans-serif;
 }
 header p {
-    text-align: center;
-    font-size: 1.5em;
-    font-family: fonte-paragrafo-cabecalho;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: fonte-paragrafo-cabecalho;
 }
 /*Menu do Cabeçalho*/
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    background-color: #255adf;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #255adf;
 }
-nav a{
-    font-size: 1.17em;
-    font-family: fonte-menu;
-    color: #ffcbdb;
-    text-decoration: none;
-    margin: 1px 0px;
+nav a {
+  font-size: 1.17em;
+  font-family: fonte-menu;
+  color: #ffcbdb;
+  text-decoration: none;
+  margin: 1px 0px;
 }
 nav a:hover {
-    color: #ffffff;
-    background-color: #c79d33;
-    font-weight: bold;
-    cursor: pointer;
+  color: #ffffff;
+  background-color: #c79d33;
+  font-weight: bold;
+  cursor: pointer;
 }
-@media (max-width: 520px) {
-    header h2{
-        font-size: 1.3em;
-    }
-    header p{
-        font-size: 1em;
-    }
-    nav a {
-        font-size: 0.77em;
-    }
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  border: 1px solid red;
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+.slide img {
+  width: 800px;
+}
+.manualNavegacao {
+  position: absolute;
+  width: 800px;
+  margin-top: 370px;
+  display: flex;
+  justify-content: center;
+}
+.manualBtn {
+  border: 2px solid #fff;
+  padding: 9px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manualBtn:not(:last-child) {
+  margin-right: 10px;
+}
+.manualBtn:hover {
+  background-color: #fff;
 }
 
+#radio1:checked ~ #primeiro{
+  margin-left: 0%;
+}
+
+#radio2:checked ~ #primeiro{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ #primeiro{
+  margin-left: -50%;
+}
+
+#radio4:checked ~ #primeiro{
+  margin-left: -75%;
+}
+
+.navegacaoAuto div {
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navegacaoAuto {
+    position: absolute;
+    width: 800px;
+    margin: 360px auto auto auto;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+/*.navegacaoAuto div:not(:last-child){
+    margin: 0 5px;
+}*/
+
+@media (max-width: 520px) {
+  header h2 {
+    font-size: 1.3em;
+  }
+  header p {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  nav a {
+    font-size: 0.77em;
+  }
+}
