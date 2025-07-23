@@ -133,7 +133,7 @@ nav a:hover {
     font-size: 1em;
     font-weight: bold;
   }
-  nav a {
+  nav a, .botao-menu {
     font-size: 0.77em;
   }
 }
