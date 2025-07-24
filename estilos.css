@@ -97,7 +97,7 @@ nav a:hover {
   background-color: #c79d33;
   padding: 10px;
   border: 1px solid #ddd;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .opcoes-menu ul {
@@ -123,8 +123,6 @@ nav a:hover {
   display: block;
 }
 
-
-
 @media (max-width: 520px) {
   header h2 {
     font-size: 1.3em;
@@ -133,7 +131,8 @@ nav a:hover {
     font-size: 1em;
     font-weight: bold;
   }
-  nav a, .botao-menu {
+  nav a,
+  .botao-menu {
     font-size: 0.77em;
   }
 }
