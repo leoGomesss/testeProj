@@ -26,10 +26,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  background-image: url("imagens/imagemFundoMain.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #ff69b4;
 }
 /*Cabeçalho*/
 header {

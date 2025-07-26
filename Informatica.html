@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página - Cursos de Informática</title>
+    <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
     <style>
         body{
             background-color: #b3d5e0;
@@ -44,12 +45,21 @@
             font-size: 1.5em;
             font-family: Cambria, sans-serif;
         }
+        .informacoes {
+            font-size: 1.2em;
+        }
         #titulo-rodape{
             text-align: center;
             color: black;
             font-size: 2em;
             font-family: Cambria, sans-serif;
             text-shadow: 2px 2px 4px #000;
+        }
+        #links {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
         }
         @media (max-width: 520px) {
             h2 {
@@ -59,7 +69,6 @@
     </style>
 </head>
 <body>
-    
     <h2>O Curso de Informática Básica da <b>R3 Cursos</b> é uma excelente oportunidade para você que deseja se iniciar no mundo digital. Este curso abrange desde o uso básico do computador, passando por softwares essenciais como o pacote Office, até dicas de uso da internet e segurança online. Amplie suas habilidades digitais agora mesmo com o Curso de Informática Básica da <b>R3 Cursos</h2>
 
 <div style="display: flex; align-items: center;">
@@ -78,22 +87,33 @@
 
 <h3>Para maiores informações entre em contato conosco.</h3>
 
-<p>Através de nosso WhatsApp:</p>
+<p class="informacoes">Através de nosso WhatsApp:</p>
 <a href="https://wa.me/5521995947891" target="_blank" class="whatsapp-link">
   <i class="fab fa-whatsapp"></i> Entrar em contato
 </a>
 <br><br>
 
-<p>Através de nosso email:</p>
+<p class="informacoes">Através de nosso email:</p>
 <a href="r3cursos.adm.22@hotmail.com">r3cursos.adm.22@hotmail.com</a>
 
-<p>Através de nosso telefone:</p>
+<p class="informacoes">Através de nosso telefone:</p>
 <p>Tel: (21)99594-7891</p>
 
 <h3>Também, nos siga em nossas redes sociais:</h3>
 
-<a href="https://wa.me/5521995947891" target="_blank">
-  <img src="imagens/whatsapp.png" alt="WhatsApp"  title="WhatsApp" style="vertical-align: middle; margin-right: 5px;"></a>
+<div id="links">
+    <a href="https://wa.me/5521995947891" target="_blank">
+      <img src="imagens/whatsapp.png" alt="WhatsApp"  title="WhatsApp" style="vertical-align: middle; margin-right: 5px;"></a>
+    
+    <a href="https://www.instagram.com/r3cursos.2018/" target="_blank">
+      <img src="imagens/instagram.png" alt="Instagram"  title="Instagram" style="vertical-align: middle; margin-right: 5px;"></a>
+    
+    <a href="#" target="_blank">
+      <img src="imagens/facebook.png" alt="Facebook"  title="Facebook" style="vertical-align: middle; margin-right: 5px;"></a>
+    
+    <a href="index.html" target="_blank">
+      <img src="imagens/R3 Cursos.png" alt="R3Cursos"  title="R3Cursos" style="vertical-align: middle; margin-right: 5px;"></a>
+</div>
 
 <footer>
     <h3 id="titulo-rodape">R3 Cursos</h3>
