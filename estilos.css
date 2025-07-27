@@ -26,7 +26,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  background-color: #ff69b4;
+  background-color: #7d7d7d;
 }
 /*Cabeçalho*/
 header {
@@ -77,7 +77,7 @@ nav a:hover {
   background-color: #255adf;
   font-size: 1.17em;
   font-family: fonte-menu;
-  color: #ffcbdb;
+  color: #ffffff;
   text-decoration: none;
   margin: 1px 0px;
   padding: 10px 20px;
@@ -113,7 +113,7 @@ nav a:hover {
 }
 
 .opcoes-menu a:hover {
-  color: #ffcbdb;
+  color: #000080;
 }
 
 .menu:hover .opcoes-menu {
