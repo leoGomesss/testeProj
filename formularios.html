@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario - Alunos</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <form action="Enviar" method="post">
+      <label for="nome">Nome Completo:</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        minlength="5"
+        maxlength="20"
+        required
+        placeholder="Nome Completo"
+      />
+      <br />
+      <label for="nome">RG:</label>
+      <input
+        type="number"
+        id="irg"
+        name="rg"
+        minlength="7"
+        maxlength="8"
+        required
+        placeholder="Nº da identidade"
+      />
+      <br />
+      <label for="nome">CPF:</label>
+      <input
+        type="number"
+        id="icpf"
+        name="cpf"
+        minlength="11"
+        maxlength="11"
+        required
+        placeholder="Nº do CPF"
+      />
+      <br />
+      <label for="nome">Nome do Pai/Responsável:</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        minlength="5"
+        maxlength="20"
+        required
+        placeholder="Nome Completo do Pai ou do Responsável"
+      />
+      <br />
+      <label for="nome">Nome da Mãe/Responsável:</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        minlength="5"
+        maxlength="20"
+        required
+        placeholder="Nome Completo da Mãe ou da Responsável."
+      />
+      <br />
+      <label for="email">E-mail:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        minlength="10"
+        maxlength="20"
+        placeholder="Digite seu email"
+        required
+      />
+      <br />
+      <label for="itel">Telefone de contato:</label>
+      <input type="tel" id="itel" name="tel" placeholder="(ddd)9XXXX-XXXX" minlength="11" maxlength="12"/>
+      <br />
+      <label for="idata">Data de Nascimento:</label>
+      <input type="date" id="idata" name="data" required />
+      <br />
+      <label for="iend">Endereço:</label>
+      <input
+        type="text"
+        id="iend"
+        name="end"
+        placeholder="Rua, lote, quadra..."
+      />
+      <label for="iend">Complemento:</label>
+      <input type="text" id="iend" name="end" required />
+      <label for="imunic">Municipio:</label>
+      <input type="text" id="imunic" name="munic" required placeholder="Municipio onde nasceu:">
+      <label for="iesta">Estado:</label>
+      <input type="text" id="iesta" name="esta" required placeholder="Estado onde nasceu:">
+      <input type="submit" value="Enviar" id="botao" />
+    </form>
+    <footer>
+      <h3 id="titulo-rodape">R3 Cursos</h3>
+      <h3>Nos siga em nossas redes sociais:</h3>
+
+<div id="links">
+    <a href="https://wa.me/5521995947891" target="_blank">
+      <img src="imagens/whatsapp.png" alt="WhatsApp"  title="WhatsApp" style="vertical-align: middle; margin-right: 5px;"></a>
+    
+    <a href="https://www.instagram.com/r3cursos.2018/" target="_blank">
+      <img src="imagens/instagram.png" alt="Instagram"  title="Instagram" style="vertical-align: middle; margin-right: 5px;"></a>
+    
+    <a href="#" target="_blank">
+      <img src="imagens/facebook.png" alt="Facebook"  title="Facebook" style="vertical-align: middle; margin-right: 5px;"></a>
+    
+    <a href="index.html">
+      <img src="imagens/R3 Cursos.png" alt="R3Cursos"  title="R3Cursos" style="vertical-align: middle; margin-right: 5px;"></a>
+    </footer>
+  </body>
+</html>

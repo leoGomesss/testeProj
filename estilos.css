@@ -62,9 +62,6 @@ nav a {
   margin: 1px 0px;
 }
 nav a:hover {
-  color: #ffffff;
-  background-color: #c79d33;
-  font-weight: bold;
   cursor: pointer;
 }
 
@@ -119,7 +116,53 @@ nav a:hover {
 .menu:hover .opcoes-menu {
   display: block;
 }
-
+form {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  background-color: #255adf;
+}
+form input {
+  width: 370px;
+  height: 27px;
+}
+label {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#itel {
+  width: 200px;
+}
+#idata {
+  width: 200px;
+}
+footer {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  background-color: #b3d5e0;
+  text-align: center;
+  color: #6d351a;
+  font-size: 1.2em;
+  font-family: Cambria, sans-serif;
+}
+#botao {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  border-radius: 10%;
+  background-color: #c79d33;
+  cursor: pointer;
+}
+input:hover {
+  background-color: #d7b661;
+}
 @media (max-width: 520px) {
   header h2 {
     font-size: 1.3em;
